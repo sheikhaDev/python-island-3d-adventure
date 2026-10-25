@@ -1,0 +1,26 @@
+name = "luma-python-hints"
+main = "luma-worker.mjs"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+[ai]
+binding = "AI"
+
+[vars]
+ALLOWED_ORIGINS = "https://sheikhadev.github.io"
+
+# Anonymous session ID; no student accounts or IP-based class-wide throttling.
+[[ratelimits]]
+name = "STUDENT_LIMIT"
+namespace_id = "64301"
+simple = { limit = 8, period = 60 }
+
+# Approximate per-location site limit; this is not a strict global daily budget.
+[[ratelimits]]
+name = "SITE_LIMIT"
+namespace_id = "64302"
+simple = { limit = 240, period = 60 }
+
+# Keep request/prompt logging off. The provider still processes requests.
+[observability]
+enabled = false
