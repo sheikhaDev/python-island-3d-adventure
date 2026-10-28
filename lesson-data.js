@@ -245,42 +245,5 @@ window.LessonData = {
       "why": "نحوّل كل نص إلى عدد ثم نجمع العددين 4 و6.",
       "expected": "10"
     }
-  ],
-  "coding": [
-    {
-      "prompt": "أدخل ناتج البرنامج لتشغيل محطة الطاقة. السعر بالريال لكل وحدة.",
-      "input": "8\n0.25",
-      "code": "units = float(input())\nprice = float(input())\nprint(units * price)",
-      "expected": "2.0",
-      "why": "8 وحدات × 0.25 ريال = 2.0 ريال."
-    },
-    {
-      "prompt": "أدخل تكلفة الاستهلاك التي يطبعها البرنامج.",
-      "input": "12\n0.5",
-      "code": "units = float(input())\nprice = float(input())\nprint(units * price)",
-      "expected": "6.0",
-      "why": "12 × 0.5 = 6.0 ريالات."
-    },
-    {
-      "prompt": "تضاف رسوم ثابتة قدرها ريال واحد. ما الناتج؟",
-      "input": "10\n0.2",
-      "code": "units = float(input())\nprice = float(input())\nfee = 1.0\nprint(units * price + fee)",
-      "expected": "3.0",
-      "why": "التكلفة 10 × 0.2 = 2.0، ثم نضيف الرسوم 1.0 ليصبح المجموع 3.0."
-    },
-    {
-      "prompt": "هناك خصم قدره نصف ريال. أدخل المبلغ النهائي.",
-      "input": "20\n0.25",
-      "code": "units = float(input())\nprice = float(input())\ndiscount = 0.5\nprint(units * price - discount)",
-      "expected": "4.5",
-      "why": "20 × 0.25 = 5.0، وبعد خصم 0.5 تصبح الفاتورة 4.5."
-    },
-    {
-      "prompt": "لم تستهلك المدينة أي وحدة. ما المبلغ المطلوب؟",
-      "input": "0\n0.5",
-      "code": "units = float(input())\nprice = float(input())\nprint(units * price)",
-      "expected": "0.0",
-      "why": "0 × 0.5 = 0.0؛ السعر وحده لا يُضاف إلى الفاتورة."
-    }
   ]
 };
